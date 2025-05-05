@@ -1,0 +1,56 @@
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: #fff;
+    position: relative;
+    top: -90px;
+  }
+ 
+  .about-container h1 {
+   position: relative;
+    top: -10px;
+    font-size: 2.9rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
+  
+  .skills,
+  .achievements {
+    margin-bottom: 2rem;
+  }
+  
+  .skills h2,
+  .achievements h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgb(226, 30, 30);
+    display: inline-block;
+  }
+  
+  .skill-group {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .skill-group strong {
+    width: 150px;
+    color: #e21e1e;
+  }
+  
+  .skill-group span {
+    flex: 1;
+    color: #ccc;
+  }
+  
+  .achievements ul {
+    list-style: disc inside;
+    padding-left: 0;
+  }
+  
+  .achievements li {
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+  }
+  

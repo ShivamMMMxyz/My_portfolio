@@ -1,0 +1,109 @@
+
+
+
+
+
+ html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.app {
+  position: relative;
+  color: #fff;
+  min-height: 100vh;
+  overflow: visible;
+}
+
+.stars-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+.nav-items {
+  position: sticky;
+  top: 0;
+  background-color: #271c1c;
+  z-index: 10;
+  padding: 1rem 2rem;
+}
+
+.nav-items ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.nav-items ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: transform 0.3s, color 0.3s;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nav-items ul li a:hover {
+  transform: scale(1.15);
+  color: rgb(226, 30, 30);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.active-link {
+  color: rgb(226, 30, 30) !important;
+  font-weight: bold;
+  border-bottom: 2px solid rgb(226, 30, 30);
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+
+.hero-left {
+  flex: 1;
+  height: 90vh;
+  min-width: 50%;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+
+.canvas-loader {
+  width: 50px;
+  height: 50px;
+  border: 6px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #915eff; /* nice purple color */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
