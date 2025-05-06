@@ -1,9 +1,6 @@
 
-
-// src/components/Navbar.jsx
 import React from "react";
 import { Link } from "react-scroll";
-// import "./Navbar.css"; // if you want to separate styles
 
 const Navbar = () => (
   <div className="nav-items">
@@ -20,7 +17,7 @@ const Navbar = () => (
             smooth={true}
             duration={500}
             spy={true}
-            offset={-70}         // adjust if you have a fixed navbar height
+            offset={-70}     
             activeClass="active-link"
           >
             {label}

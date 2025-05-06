@@ -6,7 +6,7 @@ import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
-import CanvasLoader from "./Loader"; // 👈 import your loader
+import CanvasLoader from "./Loader";
 
 const DesktopModel = ({ isMobile }) => {
   const { scene } = useGLTF("/desktop_pc/scene.gltf");
@@ -28,8 +28,8 @@ const DesktopModel = ({ isMobile }) => {
       <primitive
         object={scene}
        
-        scale={isMobile ? 0.97 : 1.42}
-        position={isMobile ? [0, -1.6, -2.2] : [-1, -1.9, -3.5]}
+        scale={isMobile ? 0.97 : 1.47}
+        position={isMobile ? [0, -1.6, -2.2] : [0, -1.9, -3.5]}
         rotation={[-0.0001, -Math.PI/3, -0.15]}
       />
     </mesh>
@@ -51,16 +51,16 @@ const Desktop = () => {
     <Canvas
       frameloop="demand"
       shadows
-      dpr={[19, 2]}
-      camera={{ position: [2, 30, 5], fov: 22 }}
+      dpr={[24, 2]}
+      camera={{ position: [2, 30, 4], fov: 30 }}
       gl={{ preserveDrawingBuffer: true }}
-      style={{ width: "60vw", height: "100%" }}
+      style={{ width: "100%", height: "100%" }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
+          maxPolarAngle={Math.PI / 2.1}
+          minPolarAngle={Math.PI / 2.1}
         />
         <DesktopModel isMobile={isMobile} />
       </Suspense>
@@ -70,15 +70,6 @@ const Desktop = () => {
 };
 
 export default Desktop;
-
-
-
-
-
-
-
-
-
 
 
 

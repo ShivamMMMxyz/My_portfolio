@@ -1,4 +1,4 @@
-// src/components/Projects.jsx
+
 import React from "react";
 import "./Projects.css";
 
@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title: "Weather App ",
-    description: "Real-time weather lookup by city.",
+    description: "Just enter your city name it will show u the current weather of the city using the open weather API.",
     tech: ["React Native", "Expo", "OpenWeather API"],
     link: "https://github.com/yourusername/weather-app"
   },
