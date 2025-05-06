@@ -1,15 +1,17 @@
 
-
-
 import React from 'react';
 import { FaGithub, FaLinkedin, FaCode } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
 import Desktop from './Desktop';
 import profileImage from '../assets/profile.jpg';
+import desktopImage from '../assets/desktop.png'; // static image for mobile
 import './Home.css';
 import { motion } from "framer-motion";
+import useIsMobile from './useIsMobile'; // custom hook for screen size
 
 export default function Home() {
+  const isMobile = useIsMobile();
+
   return (
     <div className="hero-overlay-container">
       <div className="overlay-content">
@@ -34,7 +36,15 @@ export default function Home() {
           </motion.div>
 
           <div className="hero-desktop">
-            <Desktop />
+            {isMobile ? (
+              <img
+                src={desktopImage}
+                alt="Static desktop"
+                className="hero-static-image"
+              />
+            ) : (
+              <Desktop />
+            )}
           </div>
         </div>
 
@@ -62,10 +72,3 @@ export default function Home() {
     </div>
   );
 }
-
-
-
-
-
-
-

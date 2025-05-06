@@ -13,7 +13,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
-  min-height: 250px; /* Increase the height */
+  min-height: 250px; 
 }
 
 .project-card:hover {
@@ -68,16 +68,15 @@
   transform: scale(1.05);
 }
 
-/* Adjustments for mobile and tablet responsiveness */
+
 @media (max-width: 768px) {
   .projects-container {
     padding: 1rem;
   }
   .project-card {
-    max-width: 270px; /* Decrease card width */
-    min-height: 220px; /* Increase card height */
-    margin: 0 auto; /* Center the card */
-  }
+    max-width: 270px;
+    min-height: 220px; 
+    margin: 0 auto;
   .project-title {
     font-size: 1.2rem;
   }
@@ -96,7 +95,7 @@
   }
 }
 
-/* Adjustments for larger screens */
+
 @media (min-width: 1024px) {
   .projects-container {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -114,12 +113,13 @@
 @media (orientation: landscape) {
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 4rem; /* Add left and right padding for spacing */
+    padding: 0 4rem; 
   }
 
   .project-card {
-    max-width: 280px; /* Decrease card width */
-    min-height: 270px; /* Increase card height */
-    margin: 0 auto; /* Center the card */
+    max-width: 280px; 
+    min-height: 270px; 
+    margin: 0 auto;
   }
+}
 }

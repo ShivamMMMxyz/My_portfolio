@@ -30,7 +30,7 @@ body {
   height: 100vh;
 }
 
-.nav-items {
+/* .nav-items {
   position: sticky;
   top: 0;
   background-color: #271c1c;
@@ -67,7 +67,7 @@ body {
   color: rgb(226, 30, 30) !important;
   font-weight: bold;
   border-bottom: 2px solid rgb(226, 30, 30);
-}
+} */
 
 .section {
   min-height: 100vh;

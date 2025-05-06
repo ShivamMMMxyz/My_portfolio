@@ -86,7 +86,7 @@ body {
   margin: 0.8rem 0 0 0;
 }
 
-/* NEW: Text styling matching your screenshot */
+
 .hero-subtext {
   font-size: 1.2rem;
   font-weight: 300;
@@ -236,6 +236,7 @@ color: #2022c4;
 
   .hero-desktop {
     height: 250px;
+    
     margin-top: 1rem;
   }
 
@@ -247,4 +248,18 @@ color: #2022c4;
   .social-icons a {
     font-size: 1.6rem;
   }
+}
+
+
+.hero-visual {
+  height: 350px;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.hero-static-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
